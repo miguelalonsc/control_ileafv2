@@ -16,10 +16,23 @@ switch ($valor_estado) {
 	case 5:
 		exec('sudo python /var/www/control/py/para.py');
 		break;
+	case 6:
+		exec('sudo python /var/www/control/py/apaga.py');
+		break;
+	case 7:
+		exec('sudo python /var/www/control/py/prende.py');
+		break;
+	case 8:
+		exec('sudo python /var/www/control/py/apaga2.py');
+		break;	
+	case 9:
+		exec('sudo python /var/www/control/py/prende2.py');
+		break;		
 	default:
 		exec('sudo python /var/www/control/py/para.py');
 		break;
-
+	}
+/*
 if($valor_estado==6)
 	{
 		exec('sudo python /var/www/control/apaga.py');
@@ -33,7 +46,7 @@ if($valor_estado==6)
 	elseif($valor_estado==9){
 		exec('sudo python /var/www/control/prende2.py');
 	}
-}
+}*/
 
 /*
 $valor_estado= $_POST['valor_estado'];
